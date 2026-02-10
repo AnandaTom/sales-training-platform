@@ -3,18 +3,40 @@ import { join } from "path";
 
 const DATA_DIR = join(process.cwd(), "src", "lib", "data");
 
+const IS_VERCEL = !!process.env.VERCEL;
+
+// In-memory store for serverless environments (read-only filesystem)
+const memoryStore: Record<string, unknown[]> = {};
+
 function getFilePath(collection: string): string {
   return join(DATA_DIR, `${collection}.json`);
 }
 
 export function readCollection<T>(collection: string): T[] {
+  // Check memory store first (for runtime writes on Vercel)
+  if (memoryStore[collection]) {
+    return memoryStore[collection] as T[];
+  }
+
   const filePath = getFilePath(collection);
   if (!existsSync(filePath)) return [];
   const raw = readFileSync(filePath, "utf-8");
-  return JSON.parse(raw) as T[];
+  const data = JSON.parse(raw) as T[];
+
+  // On Vercel, cache static data in memory for faster reads
+  if (IS_VERCEL) {
+    memoryStore[collection] = data;
+  }
+
+  return data;
 }
 
 export function writeCollection<T>(collection: string, data: T[]): void {
+  if (IS_VERCEL) {
+    // Vercel has read-only filesystem — store in memory
+    memoryStore[collection] = data;
+    return;
+  }
   const filePath = getFilePath(collection);
   writeFileSync(filePath, JSON.stringify(data, null, 2), "utf-8");
 }
