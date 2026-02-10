@@ -1,0 +1,34 @@
+[
+  {
+    "id": "kb-methodo-discovery",
+    "title": "Methodologie de Decouverte",
+    "category": "discovery",
+    "content": "## Les 5 etapes d'un appel de decouverte reussi\n\n1. **Accroche** (30 sec): Raison personnalisee de l'appel, pas de pitch generique\n2. **Situation actuelle** (3 min): Questions ouvertes sur leur fonctionnement actuel\n3. **Problemes** (5 min): Creuser les douleurs - quel impact? Depuis combien de temps? Qu'ont-ils essaye?\n4. **Impact** (3 min): Quantifier le cout de l'inaction - combien ca leur coute de ne rien changer?\n5. **Prochaine etape** (2 min): Proposer une action concrete et obtenir un engagement\n\n### Questions cles a poser:\n- \"Comment gerez-vous [processus] aujourd'hui?\"\n- \"Quel est l'impact de [probleme] sur votre equipe?\"\n- \"Si vous pouviez changer une seule chose, ce serait quoi?\"\n- \"Qui d'autre est concerne par ce sujet dans votre organisation?\"",
+    "createdAt": "2026-01-01T00:00:00Z",
+    "updatedAt": "2026-01-01T00:00:00Z"
+  },
+  {
+    "id": "kb-objection-handling",
+    "title": "Framework de Gestion des Objections - LAER",
+    "category": "objection_handling",
+    "content": "## Framework LAER\n\n**L** - Listen (Ecouter): Laisser le prospect exprimer completement son objection sans interrompre\n**A** - Acknowledge (Reconnaitre): Valider sa preoccupation - \"Je comprends votre point\"\n**E** - Explore (Explorer): Creuser pour comprendre la vraie objection derriere l'objection de surface\n**R** - Respond (Repondre): Apporter une reponse specifique et personnalisee\n\n### Objections frequentes et reponses:\n\n**\"C'est trop cher\"**\n→ Explorer: \"Par rapport a quoi?\" / \"Quel budget aviez-vous en tete?\"\n→ Repondre: Reframer en investissement et ROI\n\n**\"On a deja un fournisseur\"**\n→ Explorer: \"Qu'est-ce qui fonctionne bien? Et moins bien?\"\n→ Repondre: Positionner comme complement, pas remplacement\n\n**\"Il faut que j'en parle a...\"**\n→ Explorer: \"Qui est implique dans la decision? Quel est leur principal critere?\"\n→ Repondre: Proposer de les inclure dans le prochain echange",
+    "createdAt": "2026-01-01T00:00:00Z",
+    "updatedAt": "2026-01-01T00:00:00Z"
+  },
+  {
+    "id": "kb-closing",
+    "title": "Techniques de Closing",
+    "category": "closing",
+    "content": "## Les 3 types de closing\n\n### 1. Le closing naturel\nQuand le prospect donne des signaux d'achat (questions sur l'implementation, les details du contrat), proposer simplement la prochaine etape: \"On dirait que ca repond a vos besoins. On passe a la phase suivante?\"\n\n### 2. Le closing par recapitulatif\nResumer les points d'accord: \"Donc si je recapitule, vous cherchez X, Y et Z. Notre solution couvre ces 3 points. Qu'est-ce qui nous empeche d'avancer?\"\n\n### 3. Le closing par urgence (ethique)\nUtiliser une urgence reelle (pas artificielle): offre limitee dans le temps, slot d'implementation, hausse tarifaire annoncee.\n\n### Signaux d'achat a detecter:\n- Questions sur les modalites de paiement\n- \"Et si on voulait commencer par...\"\n- Discussion des details d'implementation\n- Presentation a d'autres membres de l'equipe",
+    "createdAt": "2026-01-01T00:00:00Z",
+    "updatedAt": "2026-01-01T00:00:00Z"
+  },
+  {
+    "id": "kb-general-principes",
+    "title": "Principes Fondamentaux de la Vente",
+    "category": "general",
+    "content": "## Les 7 principes\n\n1. **Ecouter plus que parler**: Ratio 60/40 - le prospect doit parler plus que vous\n2. **Poser des questions avant de pitcher**: Comprendre avant de proposer\n3. **Vendre la transformation, pas le produit**: Le client achete un resultat, pas une fonctionnalite\n4. **Creer de l'urgence sans manipuler**: Aider le prospect a voir le cout de l'inaction\n5. **Personnaliser chaque interaction**: Montrer qu'on a fait ses devoirs sur le prospect\n6. **Toujours avoir une prochaine etape**: Ne jamais finir un appel sans action concrete\n7. **Etre authentique**: Les meilleurs vendeurs sont ceux en qui on a confiance",
+    "createdAt": "2026-01-01T00:00:00Z",
+    "updatedAt": "2026-01-01T00:00:00Z"
+  }
+]

@@ -1,0 +1,82 @@
+[
+  {
+    "id": "decouverte-pme",
+    "title": "Appel de decouverte - PME",
+    "description": "Premier appel avec un proprietaire de PME qui a montre un interet initial via votre site web.",
+    "productContext": "Solution SaaS de gestion commerciale tout-en-un (CRM, facturation, suivi pipeline). Tarif: 99 euros/mois pour les PME.",
+    "companyContext": "PME de 10-20 employes, secteur services. Utilise actuellement Excel et des outils disparates. Croissance de 15% par an.",
+    "dealSize": "1 200 euros/an",
+    "stage": "Decouverte",
+    "objectives": [
+      "Identifier les douleurs principales du prospect",
+      "Comprendre le processus de decision",
+      "Qualifier le budget et le timing",
+      "Obtenir un rendez-vous de demo"
+    ],
+    "compatiblePersonas": ["alex-martin"]
+  },
+  {
+    "id": "demo-scale-up",
+    "title": "Presentation de demo - Scale-up",
+    "description": "Demo de votre solution apres un premier appel de qualification reussi. Le prospect compare 3 solutions.",
+    "productContext": "Plateforme d'automatisation des operations (workflow, reporting, integrations). Tarif: 2 000 euros/mois, engagement 12 mois.",
+    "companyContext": "Scale-up tech de 200 employes en hyper-croissance. Levee de fonds Serie B recente. Besoin d'industrialiser les processus.",
+    "dealSize": "24 000 euros/an",
+    "stage": "Demo / Presentation",
+    "objectives": [
+      "Demontrer la valeur specifique pour leur cas d'usage",
+      "Gerer les objections de comparaison concurrentielle",
+      "Construire un business case chiffre",
+      "Obtenir l'accord pour une phase pilote"
+    ],
+    "compatiblePersonas": ["sarah-chen"]
+  },
+  {
+    "id": "negociation-industrie",
+    "title": "Negociation commerciale - Industrie",
+    "description": "Phase de negociation avec le directeur des achats. L'offre technique est validee, il faut negocier les conditions.",
+    "productContext": "Solution de maintenance predictive IoT pour equipements industriels. Tarif: 5 000 euros/mois, engagement 24 mois.",
+    "companyContext": "Industrie manufacturiere, 500 employes. Parc machines vieillissant avec des arrets non planifies couteux (200K euros/an de pertes).",
+    "dealSize": "120 000 euros sur 2 ans",
+    "stage": "Negociation",
+    "objectives": [
+      "Defendre le prix sans brader la valeur",
+      "Negocier des conditions gagnant-gagnant",
+      "Gerer les objections sur les concurrents moins chers",
+      "Obtenir la signature ou les prochaines etapes claires"
+    ],
+    "compatiblePersonas": ["david-kowalski"]
+  },
+  {
+    "id": "closing-direction",
+    "title": "Closing avec la Direction Financiere",
+    "description": "Rendez-vous final avec la CFO pour valider l'investissement. Le sponsor interne est convaincu mais le budget doit etre approuve.",
+    "productContext": "Suite logicielle de transformation digitale (ERP + BI + Automatisation). Tarif: 15 000 euros/mois, engagement 36 mois.",
+    "companyContext": "Groupe international, 2000 employes. En cours de transformation digitale. Budget IT deja sous pression.",
+    "dealSize": "540 000 euros sur 3 ans",
+    "stage": "Closing / Validation budget",
+    "objectives": [
+      "Justifier l'investissement avec des KPIs financiers",
+      "Rassurer sur le risque et le ROI",
+      "Gerer la pression prix de la CFO",
+      "Obtenir le feu vert budgetaire"
+    ],
+    "compatiblePersonas": ["marie-dubois"]
+  },
+  {
+    "id": "strategic-ceo",
+    "title": "Rendez-vous strategique - CEO",
+    "description": "Rendez-vous avec le CEO obtenu via une recommandation. Il vous accorde 20 minutes pour le convaincre.",
+    "productContext": "Partenariat strategique de co-developpement d'une solution IA sur mesure. Investissement: 100 000 euros en phase 1.",
+    "companyContext": "Entreprise leader dans son secteur, 100M de CA. Le CEO cherche le prochain avantage concurrentiel. Marche en pleine disruption.",
+    "dealSize": "100 000+ euros (phase 1, potentiel multi-millions)",
+    "stage": "Executive Meeting",
+    "objectives": [
+      "Captiver en 2 minutes avec une vision strategique",
+      "Demontrer une comprehension profonde de son business",
+      "Proposer une vision transformatrice, pas juste un produit",
+      "Obtenir un champion interne ou un prochain RDV avec l'equipe"
+    ],
+    "compatiblePersonas": ["james-wright"]
+  }
+]

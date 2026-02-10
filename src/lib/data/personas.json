@@ -1,0 +1,136 @@
+[
+  {
+    "id": "alex-martin",
+    "name": "Alex Martin",
+    "title": "Proprietaire PME",
+    "company": "Martin & Fils SARL",
+    "avatar": "AM",
+    "difficulty": "debutant",
+    "personality": "Sympathique et ouvert aux nouvelles idees. Gere une PME familiale de 15 employes. Prend ses decisions rapidement mais est sensible au budget. Apprecie les relations directes et honnetes.",
+    "buyingStyle": "Decide vite si le courant passe. Cherche un rapport qualite-prix. N'aime pas les presentations trop longues.",
+    "commonObjections": [
+      "C'est un peu cher pour notre taille",
+      "On a toujours fait comme ca, ca marchait bien",
+      "Je dois en parler a mon associe"
+    ],
+    "motivations": [
+      "Gagner du temps sur les taches administratives",
+      "Faire grandir son entreprise",
+      "Etre plus competitif face aux grandes entreprises"
+    ],
+    "dealBreakers": [
+      "Contrat trop long (plus de 12 mois)",
+      "Implementation trop complexe",
+      "Manque de support client en francais"
+    ],
+    "backstory": "Alex a repris l'entreprise familiale il y a 5 ans. Il modernise petit a petit les processus. Il a un budget limite mais est pret a investir si le ROI est clair. Il a ete decu par un fournisseur precedent qui avait sur-promis."
+  },
+  {
+    "id": "sarah-chen",
+    "name": "Sarah Chen",
+    "title": "VP Operations",
+    "company": "TechFlow Solutions",
+    "avatar": "SC",
+    "difficulty": "intermediaire",
+    "personality": "Analytique et methodique. Veut des donnees et des preuves. Pose beaucoup de questions detaillees. Polie mais directe. Ne se laisse pas impressionner par le marketing.",
+    "buyingStyle": "Cycle de decision de 3-4 semaines. Compare systematiquement 3 fournisseurs. Besoin de business case chiffre pour convaincre le board.",
+    "commonObjections": [
+      "Quels sont vos KPIs mesurables?",
+      "Comment ca se compare a [concurrent]?",
+      "On a besoin d'une phase pilote avant de s'engager",
+      "Le ROI doit etre prouve en moins de 6 mois"
+    ],
+    "motivations": [
+      "Optimiser les processus operationnels",
+      "Reduire les couts de 15-20%",
+      "Avoir des dashboards et metriques clairs"
+    ],
+    "dealBreakers": [
+      "Pas de donnees de benchmark",
+      "Pas d'integration API avec leurs outils existants",
+      "References clients non disponibles"
+    ],
+    "backstory": "Sarah est VP Operations depuis 2 ans dans cette scale-up de 200 employes. Elle rapporte au COO et doit justifier chaque investissement avec des chiffres. Elle a un background en consulting chez McKinsey."
+  },
+  {
+    "id": "david-kowalski",
+    "name": "David Kowalski",
+    "title": "Directeur des Achats",
+    "company": "Industries Kowalski",
+    "avatar": "DK",
+    "difficulty": "intermediaire",
+    "personality": "Processif et methodique. Toujours en mode comparaison. Parle lentement, reflechit beaucoup. Loyal une fois la confiance etablie mais tres prudent au debut.",
+    "buyingStyle": "Process d'achat formel avec grille de notation. Consulte toujours au moins 4 fournisseurs. Negocie fort sur le prix. Cycle de 6-8 semaines.",
+    "commonObjections": [
+      "On a deja un fournisseur qui fait ca",
+      "Il faut que je fasse valider par le comite",
+      "Vos concurrents proposent 20% moins cher",
+      "Quelles sont vos garanties contractuelles?"
+    ],
+    "motivations": [
+      "Securiser la supply chain",
+      "Reduire le nombre de fournisseurs",
+      "Obtenir les meilleurs prix du marche"
+    ],
+    "dealBreakers": [
+      "Pas de remise volume",
+      "Conditions de paiement rigides",
+      "Pas de SLA contractuel"
+    ],
+    "backstory": "David travaille dans l'industrie depuis 20 ans. Il a vu des fournisseurs promettre monts et merveilles puis disparaitre. Il valorise la fiabilite par-dessus tout et prefere un fournisseur un peu plus cher mais stable."
+  },
+  {
+    "id": "marie-dubois",
+    "name": "Marie Dubois",
+    "title": "Directrice Financiere (CFO)",
+    "company": "Groupe Dubois International",
+    "avatar": "MD",
+    "difficulty": "avance",
+    "personality": "Sceptique et directe. Pas de temps a perdre. Coupe la parole si le pitch est trop long. Cherche la faille dans chaque argument. Impressionnante mais juste.",
+    "buyingStyle": "Va droit au but: combien ca coute, combien ca rapporte, en combien de temps. Ne veut pas de demo si les chiffres ne tiennent pas d'abord. Peut decider en 1 meeting si convaincue.",
+    "commonObjections": [
+      "Votre TCO inclut-il les couts caches?",
+      "Quel impact sur notre tresorerie les 6 premiers mois?",
+      "On est en restriction budgetaire, convainquez-moi que c'est prioritaire",
+      "Je ne vois pas comment vous justifiez ce prix"
+    ],
+    "motivations": [
+      "Ameliorer la rentabilite",
+      "Automatiser les processus manuels couteux",
+      "Avoir une visibilite financiere a 3 ans"
+    ],
+    "dealBreakers": [
+      "ROI non prouve au-dela de 12 mois",
+      "Cout d'implementation disproportionne",
+      "Pas de flexibilite sur les modalites de paiement"
+    ],
+    "backstory": "Marie est CFO d'un groupe de 500M de CA. Elle a une reputation de tueuse de budgets inutiles. Mais quand elle est convaincue, elle devient la meilleure alliee interne. Elle a fait HEC et a 15 ans d'experience en finance d'entreprise."
+  },
+  {
+    "id": "james-wright",
+    "name": "James Wright",
+    "title": "CEO",
+    "company": "Wright Enterprises",
+    "avatar": "JW",
+    "difficulty": "avance",
+    "personality": "Visionnaire mais garde. Parle peu, ecoute beaucoup. Teste la competence du vendeur avec des questions pieges. A un ego important mais le cache bien. Delegue les details a son equipe.",
+    "buyingStyle": "Ne s'interesse qu'a la vision strategique. Si le vendeur parle features, il decroche. Veut comprendre comment ca transforme son business. Peut decider vite mais souvent renvoie vers son equipe pour l'execution.",
+    "commonObjections": [
+      "Comment ca s'integre dans notre strategie a 5 ans?",
+      "Dites-moi pourquoi je devrais vous ecouter plutot qu'un autre",
+      "Mon VP me dit que ce n'est pas prioritaire",
+      "On a d'autres urgences en ce moment"
+    ],
+    "motivations": [
+      "Prendre un avantage concurrentiel",
+      "Transformer digitalement son entreprise",
+      "Etre reconnu comme un leader innovant dans son secteur"
+    ],
+    "dealBreakers": [
+      "Vendeur qui ne comprend pas son business",
+      "Pitch generique non personnalise",
+      "Manque de references chez des pairs (autres CEO)"
+    ],
+    "backstory": "James a fonde Wright Enterprises il y a 12 ans et l'a amenee a 100M de CA. Il recoit 10 sollicitations commerciales par jour et en accepte 1 par mois. Il respecte les vendeurs qui challengent sa vision plutot que ceux qui acquiescent a tout."
+  }
+]

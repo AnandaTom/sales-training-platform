@@ -1,0 +1,16 @@
+[
+  {
+    "id": "admin-mathieu",
+    "email": "mathieu@demo.com",
+    "name": "Mathieu",
+    "password": "$2b$10$TfSNLaeFgbalCzR5E5e23en29DRLRu2wKbzvf//AUuhtJOgZLzVga",
+    "role": "admin"
+  },
+  {
+    "id": "user-demo",
+    "email": "demo@demo.com",
+    "name": "Participant Demo",
+    "password": "$2b$10$TfSNLaeFgbalCzR5E5e23en29DRLRu2wKbzvf//AUuhtJOgZLzVga",
+    "role": "user"
+  }
+]
