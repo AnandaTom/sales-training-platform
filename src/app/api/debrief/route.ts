@@ -20,23 +20,33 @@ export async function POST(req: Request) {
     return new Response("Non autorise", { status: 401 });
   }
 
-  const { sessionId } = await req.json();
+  const { sessionId, messages: inlineMessages, personaId: inlinePersonaId, scenarioId: inlineScenarioId } = await req.json();
+
+  // Try to load from DB first (works locally), fall back to inline data (Vercel)
+  let simMessages = inlineMessages;
+  let pId = inlinePersonaId;
+  let sId = inlineScenarioId;
 
   const simSession = findById<SimulationSession>("sessions", sessionId);
-  if (!simSession) {
-    return Response.json({ error: "Session non trouvee" }, { status: 404 });
-  }
-
-  // Check if debrief already exists
-  if (simSession.debriefId) {
-    const existingDebrief = findById<Debrief>("debriefs", simSession.debriefId);
-    if (existingDebrief) {
-      return Response.json(existingDebrief);
+  if (simSession) {
+    // Check if debrief already exists
+    if (simSession.debriefId) {
+      const existingDebrief = findById<Debrief>("debriefs", simSession.debriefId);
+      if (existingDebrief) {
+        return Response.json(existingDebrief);
+      }
     }
+    simMessages = simMessages || simSession.messages;
+    pId = pId || simSession.personaId;
+    sId = sId || simSession.scenarioId;
   }
 
-  const persona = findById<BuyerPersona>("personas", simSession.personaId);
-  const scenario = findById<Scenario>("scenarios", simSession.scenarioId);
+  if (!simMessages || !pId || !sId) {
+    return Response.json({ error: "Session non trouvee et donnees manquantes" }, { status: 404 });
+  }
+
+  const persona = findById<BuyerPersona>("personas", pId);
+  const scenario = findById<Scenario>("scenarios", sId);
   if (!persona || !scenario) {
     return Response.json({ error: "Persona ou scenario non trouve" }, { status: 404 });
   }
@@ -44,8 +54,8 @@ export async function POST(req: Request) {
   const kbEntries = readCollection<KnowledgeBaseEntry>("sample-kb");
 
   // Build conversation transcript
-  const transcript = simSession.messages
-    .map((m) => `${m.role === "user" ? "VENDEUR" : persona.name}: ${m.content}`)
+  const transcript = simMessages
+    .map((m: { role: string; content: string }) => `${m.role === "user" ? "VENDEUR" : persona.name}: ${m.content}`)
     .join("\n\n");
 
   const debriefPrompt = buildDebriefPrompt(transcript, persona, scenario, kbEntries);

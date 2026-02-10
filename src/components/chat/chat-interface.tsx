@@ -71,7 +71,18 @@ export function ChatInterface({ sessionId, persona, scenario }: ChatInterfacePro
         timestamp: new Date().toISOString(),
       }));
 
-    await fetch("/api/sessions", {
+    // Store conversation data in sessionStorage for the debrief page
+    sessionStorage.setItem(
+      `debrief-${sessionId}`,
+      JSON.stringify({
+        messages: conversationMessages,
+        personaId: persona.id,
+        scenarioId: scenario.id,
+      })
+    );
+
+    // Fire-and-forget session save (may fail on Vercel read-only fs)
+    fetch("/api/sessions", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
@@ -79,7 +90,7 @@ export function ChatInterface({ sessionId, persona, scenario }: ChatInterfacePro
         sessionId,
         messages: conversationMessages,
       }),
-    });
+    }).catch(() => {});
 
     router.push(`/debrief/${sessionId}`);
   }

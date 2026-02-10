@@ -22,10 +22,16 @@ export default function DebriefPage() {
   useEffect(() => {
     async function loadDebrief() {
       try {
+        // Read conversation data from sessionStorage (set by chat-interface)
+        const stored = sessionStorage.getItem(`debrief-${sessionId}`);
+        const payload = stored
+          ? { sessionId, ...JSON.parse(stored) }
+          : { sessionId };
+
         const res = await fetch("/api/debrief", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({ sessionId }),
+          body: JSON.stringify(payload),
         });
 
         if (!res.ok) {
@@ -36,6 +42,9 @@ export default function DebriefPage() {
 
         const data = await res.json();
         setDebrief(data);
+
+        // Clean up sessionStorage
+        if (stored) sessionStorage.removeItem(`debrief-${sessionId}`);
       } catch {
         setError("Erreur de connexion");
       }
